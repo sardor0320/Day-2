@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Air Pods</title>
     <style>
         ::-webkit-scrollbar {
             display: none;
@@ -14,11 +15,11 @@
 </head>
 
 <body>
-    <nav class="bg-opacity-50 z-3 navbar w-100 text-white px-5 justify-content-around position-sticky"
+    <nav class="position-fixed bg-opacity-50 z-3 navbar w-100 text-white px-5 justify-content-around position-sticky"
         style="background-color: #0E1D34; height: 100px;">
         <h1 class="fw-bold">Logis</h1>
         <div class="d-flex align-items-center gap-5">
-            <ul class="d-flex fs-4 align-items-center gap-5" style="list-style: none;">
+            <ul class="d-xl-flex d-none d-flex fs-4 align-items-center gap-5" style="list-style: none;">
                 <li>Home</li>
                 <li>About</li>
                 <li>Services</li>
@@ -29,14 +30,14 @@
             <button type="button" class="fs-5 px-5 py-2 btn btn-primary">Primary</button>
         </div>
     </nav>
-    <section class="pt-5 w-100 text-white d-flex align-items-center justify-content-around "
-        style="background-color: #0E1D34; height: 100vh; padding-left: 180px;">
-        <div class="w-50 h-75 d-flex flex-column justify-content-between">
+    <section class=" flex-wrap pt-5 ps-0 py-5 w-100 text-white d-flex align-items-center justify-content-evenly "
+        style="background-color: #0E1D34; height: max-content; padding-left: 180px;">
+        <div class="h-75 gap-3 d-flex flex-column justify-content-between">
             <h1 class="fw-bold " style="font-size: 4rem;">Your Lightning Fast<br> Delivery Partner</h1>
             <p>Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt <br>optio quis sit odio
                 nemo quisquam. eius quos reiciendis eum vel eum voluptatem<br> eum maiores eaque id optio ullam
                 occaecati odio est possimus vel reprehenderit</p>
-            <div class="input-group mb-3 w-75 ">
+            <div class="input-group mb-3 w-100 ">
                 <input type="text" class="form-control" placeholder="Recipient's username"
                     aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <span class="input-group-text" id="basic-addon2"><button type="button"
@@ -61,10 +62,10 @@
                 </div>
             </div>
         </div>
-        <img class="w-50 h-75" src="https://bootstrapmade.com/demo/templates/Logis/assets/img/hero-img.svg" alt="">
+        <img width="600px" height="600px" src="https://bootstrapmade.com/demo/templates/Logis/assets/img/hero-img.svg" alt="">
     </section>
-    <section class="w-100 d-flex align-items-center justify-content-center" style="height: 50vh;">
-        <div class="card mb-3 border-0" style="max-width: 500px;">
+    <section class="py-5 flex-wrap w-100 d-flex align-items-center justify-content-center " style="height: max-content;">
+        <div data-aos="zoom-in-up" class="card mb-3 border-0" style="max-width: 500px;">
             <div class="row g-0">
                 <div class="col-md-2">
                     <img width="64" height="64" src="https://img.icons8.com/arcade/64/wicker-basket.png"
@@ -80,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-3 border-0" style="max-width: 500px;">
+        <div data-aos="zoom-in-up" class="card mb-3 border-0" style="max-width: 500px;">
             <div class="row g-0">
                 <div class="col-md-2">
                     <img width="64" height="64" src="https://img.icons8.com/arcade/64/wicker-basket.png"
@@ -96,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <div class="card mb-3 border-0" style="max-width: 500px;">
+        <div data-aos="zoom-in-up" class="card mb-3 border-0" style="max-width: 500px;">
             <div class="row g-0">
                 <div class="col-md-2">
                     <img width="64" height="64" src="https://img.icons8.com/arcade/64/wicker-basket.png"
@@ -112,9 +113,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container justify-content-center align-items-center d-flex" style="height: 100vh;">
-        <div class="w-50 h-75 d-flex flex-column justify-content-between">
+    </section>  
+    <section class="flex-wrap py-5 container justify-content-center align-items-center d-flex" style="height: max-content;">
+        <div data-aos="zoom-in-up" class="w-50 h-75 d-flex flex-column justify-content-between">
             <div>
                 <h1 class="fw-bolder" style="color: #001973; font-size: 2.5rem;">About Us</h1>
                 <p class="mt-2 fs-6 fw-medium">Dolor iure expedita id fuga asperiores qui sunt consequatur minima.
@@ -126,7 +127,7 @@
                 <p class="fw-medium fs-6">Magni facilis facilis repellendus cum excepturi quaerat praesentium <br>libre
                     trade</p>
             </div>
-            <div>
+            <div >
                 <h3 class="fw-bold" style="color: #001973;">Ullamco laboris nisi ut aliquip consequat</h3>
                 <p class="fw-medium fs-6">Magni facilis facilis repellendus cum excepturi quaerat praesentium <br>libre
                     trade</p>
@@ -137,63 +138,99 @@
                     trade</p>
             </div>
         </div>
-        <img class="w-50 h-75 object-fit-cover"
+        <img data-aos="zoom-in-up" width="500px" height="500px" class="object-fit-cover"
             src="https://bootstrapmade.com/demo/templates/Logis/assets/img/about.jpg" alt="">
     </section>
-    <section class="container w-100 d-flex flex-column justify-content-evenly align-items-center" style="height: 180vh;">
+    <section class="container w-100 d-flex flex-column justify-content-evenly align-items-center py-5 "
+        style="height: max-content;">
         <h1 class="fw-bold" style="color: #001973;">OUR SERVICES</h1>
-        <p class="fw-medium fs-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        <div class="w-100 d-flex flex-wrap justify-content-between">
-            <div class="card rounded-0" style="width: 400px;">
-                <img style="width: 400px; height: 300px;" src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top" alt="...">
+        <p class="text-center fw-medium fs-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <div class="justify-content-lg-between align-items-center w-100 d-flex flex-wrap justify-content-center">
+            <div data-aos="zoom-in-up" class="card rounded-0" style="width: 400px;">
+                <img style="width: 400px; height: 300px;"
+                    src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top"
+                    alt="...">
                 <div class="card-body">
                     <h5 class="fs-3 fw-bold ms-3" style="color: #001973" class="card-title">Storage</h5>
-                    <p class="fs-6 mt-3 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit</p>
+                    <p class="fs-6 mt-3 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur
+                        perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit
+                    </p>
                 </div>
             </div>
-            <div class="card rounded-0" style="width: 400px;">
-                <img style="width: 400px; height: 300px;" src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top" alt="...">
+            <div data-aos="zoom-in-up" class="card rounded-0" style="width: 400px;">
+                <img style="width: 400px; height: 300px;"
+                    src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top"
+                    alt="...">
                 <div class="card-body">
                     <h5 class="fs-3 fw-bold ms-3" style="color: #001973" class="card-title">Storage</h5>
-                    <p class="fs-6 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit</p>
+                    <p class="fs-6 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur
+                        perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit
+                    </p>
                 </div>
             </div>
-            <div class="card rounded-0" style="width: 400px;">
-                <img style="width: 400px; height: 300px;" src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top" alt="...">
+            <div data-aos="zoom-in-up" class="mt-xxl-0 mt-5 card rounded-0" style="width: 400px;">
+                <img style="width: 400px; height: 300px;"
+                    src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top"
+                    alt="...">
                 <div class="card-body">
                     <h5 class="fs-3 fw-bold ms-3" style="color: #001973" class="card-title">Storage</h5>
-                    <p class="fs-6 mt-3 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit</p>
+                    <p class="fs-6 mt-3 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur
+                        perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit
+                    </p>
                 </div>
             </div>
-            <div class=" mt-5 card rounded-0 mt-1" style="width: 400px;">
-                <img style="width: 400px; height: 300px;" src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top" alt="...">
+            <div data-aos="zoom-in-up" class=" mt-5 card rounded-0 mt-1" style="width: 400px;">
+                <img style="width: 400px; height: 300px;"
+                    src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top"
+                    alt="...">
                 <div class="card-body">
                     <h5 class="fs-3 fw-bold ms-3" style="color: #001973" class="card-title">Storage</h5>
-                    <p class="fs-6 mt-3 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit</p>
+                    <p class="fs-6 mt-3 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur
+                        perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit
+                    </p>
                 </div>
             </div>
-            <div class=" mt-5 card rounded-0 mt-1" style="width: 400px;">
-                <img style="width: 400px; height: 300px;" src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top" alt="...">
+            <div data-aos="zoom-in-up" class=" mt-5 card rounded-0 mt-1" style="width: 400px;">
+                <img style="width: 400px; height: 300px;"
+                    src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top"
+                    alt="...">
                 <div class="card-body">
                     <h5 class="fs-3 fw-bold ms-3" style="color: #001973" class="card-title">Storage</h5>
-                    <p class="fs-6 mt-3 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit</p>
+                    <p class="fs-6 mt-3 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur
+                        perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit
+                    </p>
                 </div>
             </div>
-            <div class="mt-5 card rounded-0 mt-1" style="width: 400px;">
-                <img style="width: 400px; height: 300px;" src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top" alt="...">
+            <div data-aos="zoom-in-up" class="mt-5 card rounded-0 mt-1" style="width: 400px;">
+                <img style="width: 400px; height: 300px;"
+                    src="https://bootstrapmade.com/demo/templates/Logis/assets/img/service-1.jpg" class="card-img-top"
+                    alt="...">
                 <div class="card-body">
                     <h5 class="fs-3 fw-bold ms-3" style="color: #001973" class="card-title">Storage</h5>
-                    <p class="fs-6 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit</p>
+                    <p class="fs-6 mb-4 ms-3 card-text opacity-75">Cumque eos in qui numquam. Aut<br> aspernatur
+                        perferendis sed atque quia<br> voluptas quisquam repellendus temporibus<br> itaqueofficiis odit
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="text-white d-flex flex-column align-items-center justify-content-center w-100 d-flex align-items-center justify-content-center " style="height: 50vh; background: url('https://bootstrapmade.com/demo/templates/Logis/assets/img/cta-bg.jpg'); background-repeat: no-repeat; background-size: cover;">
-        <h1 class="fw-bold">Call To Action</h1>
-        <p class="fw-medium fs-5 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <button type="button" class="btn btn-outline-light fw-bold px-5 py-3 fs-5 border-3">Call To Action</button>
+    <section
+        class="py-5 text-white d-flex flex-column align-items-center justify-content-center w-100 d-flex align-items-center justify-content-center "
+        style="height: max-content !important; background: url('https://bootstrapmade.com/demo/templates/Logis/assets/img/cta-bg.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <h1 data-aos="zoom-in-up" class="fw-bold">Call To Action</h1>
+        <p data-aos="zoom-in-up" class="fw-medium fs-5 text-center">Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br> non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.</p>
+        <button data-aos="zoom-in-up" type="button" class="btn btn-outline-light fw-bold px-5 py-3 fs-5 border-3 mb-2">Call
+            To Action</button>
     </section>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
